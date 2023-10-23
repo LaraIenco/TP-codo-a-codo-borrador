@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 /* Estilos para body y header*/
 body{
@@ -89,8 +95,8 @@ h4 img {
 .ingresar-button {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente el contenido */
-    text-align: center; /* Alinea el texto en el centro */
+    align-items: center;
+    text-align: center;
 }
 .ingresar-button button{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -99,9 +105,21 @@ h4 img {
     font-size: 18px;
 }
 
-button[type="submit"] {
-    margin-top: 1vh; /* Espacio entre el botón y el contenido superior */
+.ingresar-button {
+    margin-top: 1vh;
 }
+.registrarse{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+}
+.registrarse a{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+
+}
+
 .cuenta:hover .micuenta-content{
     display: block;
 }
@@ -117,17 +135,22 @@ button[type="submit"] {
 }
 .input {
     display: flex;
-    align-items: center; /* Alinear verticalmente los elementos */
-    padding: 10px; /* Añadir espacio entre los elementos */
+    align-items: center;
+    padding: 10px;
 }
 
 label {
-    margin-left: 10px; /* Espacio entre el input y la etiqueta */
+    margin-left: 10px;
+}
+.novedades button{
+padding: 1vh;
+background-color: whitesmoke;
+color: #031a37;
+border: none;
+cursor: pointer;
 }
 
-
-
-/* Esto es del carrousel/slider */
+/* Estilos para el slider principal */
 
 .container-slider {
     width: 100%;
@@ -137,7 +160,6 @@ label {
     position: relative;
 
 }
-
 
 .slider {
     display: flex;
@@ -169,16 +191,13 @@ label {
     right: 30px;
 }
 
-/* Fin del codigo del carrousel/slider */
-
-
 /* Estilos para la Search Box */
 
 .search-box {
-    width: 60vh; /* Ajusta el ancho del cuadro de búsqueda según tus preferencias */
+    width: 60vh;
     position: relative;
     margin: 0 auto;
-    margin-top: -4vh; /* Ajusta la posición vertical aquí según tu diseño */
+    margin-top: -4vh;
     background: #d6d6d6;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 2vh;
@@ -188,7 +207,7 @@ label {
 }
 
 .search-box input[type="text"] {
-    width: 40vh; /* Ajusta el ancho del cuadro de búsqueda según tus preferencias */
+    width: 40vh;
     height: 4vh;
     padding: 1vh;
     border: 0.2vh solid #052C60;
@@ -196,21 +215,20 @@ label {
 }
 
 .search-box button {
-    margin-left: 1vh; /* Añade un margen izquierdo para separar el botón del cuadro de búsqueda */
+    margin-left: 1vh;
     background-color: whitesmoke;
     border: 0.2vh solid  #052C60;
     border-radius: 0.5vh;
     cursor: pointer;
-    padding: 0; /* Elimina el padding para que la imagen se ajuste correctamente */
-    height: 4vh; /* Ajusta el alto del botón según tus preferencias */
-    width: 4vh; /* Ajusta el ancho del botón según tus preferencias */
+    height: 4vh;
+    width: 4vh;
 
 }
 
 .search-box button img {
-    height: 50%; /* La imagen ocupará el 70% del alto del botón */
-    width: auto; /* La anchura se ajustará automáticamente */
+    height: 50%;
 }
+
 /*Estilos para la sección de información */
 
 .informacion{
@@ -225,17 +243,18 @@ label {
 .informacion h3 {
     display: flex;
     align-items: center;
-    justify-content: center; /* Alinea horizontalmente al centro */
+    justify-content: center;
     font-size: 24px;
 }
 
 h3 img {
     max-height: 5vh; 
 }
-p {
-    text-align: center; /* Alinea el texto horizontalmente al centro */
+.informacion p {
+    text-align: center;
     margin-top: 2vh;
 }
+
 /* Estilos para el slider de categorías */
 
 .slider-container-cat {
@@ -253,12 +272,14 @@ p {
     top: 50%;
     font-weight: bold;
     transform: translateY(-50%);
-    background-color: hsla(225, 77%, 20%, 0.408);
     color: #052C60;
     padding: 10px 20px;
-    border: solid #1E64BD;
+    border: none;
     cursor: pointer;
     font-size: 16px;
+    background-color: whitesmoke;
+    font-size: 70px;
+    font-weight: 100;
 }
 
 #leftBtn {
@@ -266,7 +287,7 @@ p {
 }
 
 #rightBtn {
-    right: 15vh;
+    right: 16vh;
 }
 
 .slider2 {
@@ -279,10 +300,10 @@ p {
 }
 
 .slider-cat img {
-    width: 30vh; /* Cambia el tamaño de las imágenes según tus preferencias */
+    width: 30vh;
     height: auto;
-    margin-right: 5vh; /* Añade margen derecho para separar los elementos */
-    margin-left: 0.5vh; /* Añade margen izquierdo para separar los elementos */
+    margin-right: 5vh;
+    margin-left: 0.5vh;
 }
 .slider-item {
    text-align: center;
@@ -291,24 +312,24 @@ p {
 }
 .slider-item img {
     height: auto;
-    border-radius: 50%; /* Hace que las imágenes sean redondas */
-    transition: box-shadow 0.3s ease; /* Agrega una transición suave a la sombra */
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .slider-item:hover img {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra al pasar el mouse por encima */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .slider-item-title {
-    margin-top: 1vh; /* Añade espacio entre la imagen y el título */
-    font-size: 2vh; /* Tamaño de fuente del título */
+    margin-top: 1vh;
+    font-size: 2vh;
     font-family: "Lato", sans-serif;
     font-weight: bold;
-    color: hsla(225, 76%, 20%, 0.753); /* Color del texto del título */
+    color: hsla(225, 76%, 20%, 0.753);
     margin-right: 5vh;
 }
-/* Estilos de las ofertas*/
 
+/* Estilos de las ofertas*/
 .elemento h3{
     text-align: center;
     font-size: 30px;
@@ -330,7 +351,6 @@ p {
     padding-bottom: 2vh;
 
 }
-
 .elemento:hover{
     box-shadow: 0 1vh 2vh rgba(12,32,91,1), 0 1vh 2vh rgba(12,32,91,1);
     transform: translate(0px,-8px);
@@ -396,12 +416,10 @@ display: block;
 }
 
 /* Estilos para promos*/
-
 .banner-container {
     display: flex;
     justify-content: space-between;
 }
-
 .banner {
     margin: 2vh;
     display: flex;
@@ -416,28 +434,23 @@ display: block;
     transform: scale(1.05);
     opacity: 0.9;
 }
-
 .banner img {
-    max-width: 50%; /* Ajusta el ancho de la imagen según tus necesidades */
+    max-width: 50%;
 }
-
 .banner-content {
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: left;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
-
 .banner-content h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
-
 .banner-content p {
     font-size: 15px;
     margin-bottom: 20px;
 }
-
 .banner-content a {
     display: inline-block;
     padding: 1vh 2vh;
@@ -451,125 +464,94 @@ display: block;
 }
 
 /* Estilos para el marcas destacadas*/
-
 .slider-marcas {
     background-color: whitesmoke;
     width: 100%;
     overflow: hidden;
-    white-space: nowrap; /* Evita que las marcas se envuelvan a la siguiente línea */
+    white-space: nowrap;
   }
-  
   .marcas {
     display: inline-block;
     transition: transform 0.90s ease;
     font-size: 0;
   }
-  
   .lista-marcas {
     display: inline-block;
     box-sizing: border-box;
     margin-right: 10vh;
     max-width: 30vh;
   }
-  
   .lista-marcas img {
     max-width: 100%;
     height: auto;
     width: 100%;
     padding: 1vh 0 0 4vh;
-
   }
-  
   .slider-marcas:hover .marcas {
-    transform: translateX(-100%); /* Mueve las marcas hacia la izquierda al pasar el mouse */
+    transform: translateX(-100%);
   }
-
-
-
-/* Estilos para el footer*/
-footer {
-    background: url(/assets/media/images/footer.png);
-}
 
 /* Estilos para el boton fijo de contacto*/
-
-.btn-static {
-    position: fixed; /* Fija la posición del botón */
-    bottom: 5vh; /* Ajusta la distancia desde la parte inferior según tus preferencias */
-    right: 5vh; /* Ajusta la distancia desde la derecha según tus preferencias */
-    width: 50px; /* Ajusta el ancho del botón según tus necesidades */
-    height: 50px; /* Ajusta la altura del botón según tus necesidades */
-    background-color: transparent; /* Fondo transparente */
-    border: none; /* Sin bordes */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    z-index: 1000;
-    border-radius: 50%;
+.btn-wsp {
+    position: fixed;
+    width: 7vh;
+    height:7vh;
+    line-height: 7vh;
+    bottom:3vh;
+    right: 3vh;
+    color: white;
+    background-color: #3366a9;
+    border-radius: 5vh;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    box-shadow: 0vh 0.1vh 1vh rgba(12,32,91,1);
+    z-index: 100;
 }
-.chat img {
-width:8vh ;
-height: 8vh;
-margin: 10px;
-
-}
-.chat{
-    border-radius: 10%;
-    width: 10vh ;
-    height: 10vh;
-    border: solid #052C60;
+.btn-wsp:hover{
+    transform: scale(1.3);
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-    .nav-images {
-        margin-right: 3vh;
-    }
-    .nav-images h4 {
-        font-size: 18px;
-        margin: 4vh;
-    }
-    .h4 img {
-        max-height: 5vh;
-    }
-    .nav-images i {
-        width: 5vh;
-    }
+/* Estilos para el footer*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 30vh;
+    font-family:'Trebuchet MS', sans-serif;
+    background-color: rgba(166,189,223,1);
 }
-
-/* Estilos para tablet (tamaño de pantalla mediano) */
-@media (max-width: 767px) {
-    .nav-images {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-images h4 {
-        font-size: 16px;
-        margin: 2vh 0;
-    }
-    .h4 img {
-        max-height: 4vh;
-    }
-    .nav-images i {
-        width: 4vh;
-    }
+.footer-container h6{
+    font-weight: 700;
+    font-size: 23px;
+    color: #052C60;
 }
-
-/* Estilos para dispositivos móviles (tamaño de pantalla pequeño) */
-@media (max-width: 480px) {
-    .logo img {
-        max-width: 80%;
-    }
-    .nav-images {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-images h4 {
-        font-size: 14px;
-        margin: 2vh 0;
-    }
-    .h4 img {
-        max-height: 3vh;
-    }
-    .nav-images i {
-        width: 3vh;
-    }
+.footer-container p{
+    margin: 2vh 0;
+    font-size: 17px;
+    color: #444242;
+}
+.redes i{
+    font-size: 35px;
+    margin-right: 1vh;
+}
+.redes i:hover{
+    transform: scale(1.1);
+    color: #052C60 !important;
+}
+.novedades{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 3vh;
+background-color: rgba(33,85,152,1);
+color: white;
+font-size: 20px;
+}
+.novedades h4{
+margin-right: 3vh;
+}
+.novedades input{
+    padding: 1vh;
+    width: 50vh;
 }

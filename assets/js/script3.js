@@ -7,7 +7,7 @@ const prevBtn = document.querySelector('.slider__btn--left');
 
 let currentIndex = 0;
 
-// Con esto, cambia a la siguiente img
+// Con esto, cambio a la siguiente img
 function changeSlide(index) {
     slider.style.transform = `translateX(-${index * 100}%)`;
 }
@@ -43,8 +43,6 @@ prevBtn.addEventListener('click', () => {
 });
 // Fin de Slider principal
 
-
-
 //Comienzo de Slider Categorias
 
 const leftBtn = document.getElementById("leftBtn");
@@ -63,7 +61,7 @@ leftBtn.addEventListener("click", () => {
 });
 
 rightBtn.addEventListener("click", () => {
-    const maxIndexCat = sliderCat.children.length - 4;
+    const maxIndexCat = sliderCat.children.length - 4; //Ajusto hasta que no haya nada en blanco, por eso el -4
     if (currentIndexCat < maxIndexCat) {
         currentIndexCat++;
     } else {
@@ -78,8 +76,9 @@ function updateCategorySlider() {
 }
 //Fin Slider Categorias
 
+// Simulador de Carrito
+
 function mostrarAlerta() {
     alert("El producto ha sido añadido al carrito.");
-  }
+}
 
-  //Carrito
